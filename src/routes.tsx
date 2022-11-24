@@ -8,6 +8,10 @@ import MinimalLayout from 'layout/MinimalLayout';
 // landing routing
 const LandingPage = Loadable(lazy(() => import('views/landing')));
 
+const LoginPage = Loadable(lazy(() => import('views/login')));
+
+const SignupPage = Loadable(lazy(() => import('views/signup')));
+
 // dashboard routing
 const Dashboard = Loadable(lazy(() => import('views/dashboard')));
 
@@ -64,7 +68,11 @@ const Routes = () => {
         },
         {
           path: '',
-          element: <LandingPage />
+          element: <LoginPage />
+        },
+        {
+          path: 'signup',
+          element: <SignupPage />
         },
         {
           path: '*',
