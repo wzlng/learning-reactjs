@@ -44,6 +44,7 @@ export default function SignIn() {
     }
     if (user) {
       console.log(user.email +" " + user.displayName)
+      navigate("/dashboard")
     }
   }, [user, loading]);
 
