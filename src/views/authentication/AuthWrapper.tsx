@@ -1,7 +1,6 @@
 // material-ui
 import { styled } from '@mui/material/styles';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import SignIn from 'views/login';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase';
