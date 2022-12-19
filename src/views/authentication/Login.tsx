@@ -42,7 +42,7 @@ function Login() {
       return;
     }
     if (user) {
-      navigate('/dashboard');
+      navigate('/');
     }
   }, [user, loading]);
 

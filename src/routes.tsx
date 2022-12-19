@@ -27,10 +27,6 @@ const Page404 = Loadable(lazy(() => import('views/404')));
 const Routes = () => {
   return useRoutes([
     {
-      path: 'dashboard',
-      element: <Dashboard />
-    },
-    {
       path: '/',
       element: <MinimalLayout />,
       children: [
@@ -64,7 +60,7 @@ const Routes = () => {
         },
         {
           path: '',
-          element: <AuthLogin />
+          element: <Dashboard />
         },
         {
           path: '*',

@@ -7,7 +7,6 @@ import { auth } from '../../firebase';
 // ==============================|| AUTHENTICATION WRAPPER ||============================== //
 
 const AuthComponent = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.primary.light,
   minHeight: '100vh'
 }));
 
@@ -20,7 +19,7 @@ export default function AuthWrapper(props: any) {
       return;
     }
     if (!user) {
-      navigate('/');
+      navigate('/login');
     }
   }, [user, loading]);
   const { children } = props;
