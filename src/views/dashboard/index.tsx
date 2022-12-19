@@ -21,7 +21,7 @@ export default function Dashboard() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container maxWidth="lg">
-          <Header title="Blog" sections={sections} logout={logout} />
+          <Header title="iPTG" sections={sections} logout={logout} />
           <Typography variant="h1">Abc</Typography>
         </Container>
       </ThemeProvider>
