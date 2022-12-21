@@ -21,6 +21,7 @@ export default function Header(props: HeaderProps) {
   return (
     <>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <IconButton />
         <Typography
           component="h2"
           variant="h5"
